@@ -1,3 +1,7 @@
+import movieList from "./MovieData.json";
+
+const movies = movieList.MovieData;
+
 function MovieList() {
   return (
     <div>
@@ -13,7 +17,18 @@ function MovieList() {
             <th>Edited</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          {movies.map((m) => (
+            <tr>
+              <td>{m.Title}</td>
+              <td>{m.Category}</td>
+              <td>{m.Rating}</td>
+              <td>{m.Director}</td>
+              <td>{m.Year}</td>
+              <td>{m.Edited}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );
