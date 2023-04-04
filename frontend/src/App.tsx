@@ -4,6 +4,7 @@ import Layout from "./layout";
 import Home from "./home";
 import Podcast from "./podcast";
 import MovieList from "./movie_collection";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
   return (

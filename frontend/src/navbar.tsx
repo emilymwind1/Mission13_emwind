@@ -3,22 +3,31 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
             
-      <ul>
+      <ul className="navbar-nav">
                 
-        <li>
-                    <Link to="/">Home</Link>
+        <li className="nav-item">
+                    
+          <Link to="/" className="nav-link">
+            Home
+          </Link>
                   
         </li>
                 
-        <li>
-                    <Link to="/podcast">Podcasts</Link>
+        <li className="nav-item">
+                    
+          <Link to="/podcast" className="nav-link">
+            Podcasts
+          </Link>
                   
         </li>
                 
-        <li>
-                    <Link to="/movielist">Movie List</Link>
+        <li className="nav-item">
+                    
+          <Link to="/movielist" className="nav-link">
+            Movie List
+          </Link>
                   
         </li>
               
